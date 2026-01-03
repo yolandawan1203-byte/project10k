@@ -33,7 +33,15 @@
             border-bottom: 1px solid #333;
         }
         .profile-area { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-        .avatar { width: 50px; height: 50px; border-radius: 50%; background: #333; border: 2px solid var(--neon-green); }
+        .avatar { 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    border: 2px solid var(--neon-green); 
+    object-fit: cover; /* This makes sure your face isn't stretched */
+    display: block;
+    background-color: #333; /* Falls back to gray if image fails */
+}
         .handle { font-weight: 700; font-size: 1.2rem; }
         
         .progress-container { width: 100%; max-width: 400px; background: #333; height: 10px; border-radius: 5px; position: relative; }
