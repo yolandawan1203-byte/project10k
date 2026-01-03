@@ -68,7 +68,14 @@
         .stat-label { text-transform: uppercase; letter-spacing: 2px; color: var(--text-gray); font-size: 0.9rem; }
 
         .analogy-card { margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; background: #252525; padding: 15px; border-radius: 15px; }
-        .analogy-img { width: 80px; height: 80px; background: url('https://img.icons8.com/color/96/basketball-court.png') center/contain no-repeat; filter: grayscale(1) invert(1) brightness(2); }
+        .analogy-img { 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 8px; /* Optional: rounds the corners of the photo */
+    background: url('https://github.com/yolandawan1203-byte/project10k/blob/main/court.jpg?raw=true') center/cover no-repeat; 
+    filter: none; /* Removed the invert/grayscale so you see the real colors */
+    border: 1px solid #444; /* Adds a subtle frame around the photo */
+}
         .multiplier { font-size: 2.5rem; font-weight: 900; color: var(--text-white); }
         .analogy-text { font-size: 0.9rem; color: var(--text-gray); max-width: 150px; text-align: left; }
 
